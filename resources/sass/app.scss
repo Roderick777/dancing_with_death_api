@@ -1,0 +1,94 @@
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+.navbar-laravel {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+.days-of-week {
+	display: flex;
+    text-align: center;
+}
+.days-of-week > div {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+.event-calendar__grid {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.week {
+    display: flex;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.week:last-child {
+    border-bottom: none;
+}
+.week > .day {
+    flex: 1;
+    height: 65px;
+    padding: 5px;
+    box-sizing: border-box;
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+.week > .day:last-child {
+    border-right: none;
+}
+.day.is-today {
+  background-color: cadetblue;
+  color: #FFF;
+}
+.dia-elegido{
+  background-color: salmon; 
+  color:#FFF;
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
+}
+.event-dot{
+  background: rgba(0, 0, 0, 0.5);
+  width: 7px;
+  height: 7px;
+  position: relative;
+  float: left;
+  margin-right: 3px;
+}
+.card{
+  box-shadow: 0 1px 1px 0 rgba(60,64,67,.08), 0 1px 3px 1px rgba(60,64,67,.16);
+  border-radius: 3px;
+}
+.card-evento{
+  background-color: salmon;
+  color:#FFF;
+  border-color: rgba(60,64,67,.08) !important;
+  margin-bottom: 10px;
+  .card-body{
+    padding: 10px !important;  
+  }
+}
+
+.detalle-grafico{
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  padding: 10px;
+  width: 250px;
+  height: 150px;
+  box-shadow: 0 1px 3px 1px rgba(60,64,67,.08), 0 1px 3px 1px rgba(60,64,67,.16);
+
+}
